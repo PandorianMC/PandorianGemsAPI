@@ -3,7 +3,7 @@ Welcome to the official SimpleGemsAPI!
 
 # API Usage
 ```JAVA
-public int getGems(Player player, long amount) {
+public long getGems(Player player) {
     ProfileManager profile = SimpleGemsAPI.getProfileManager();
     return profile.getGems(player);
 }

@@ -5,7 +5,7 @@ Welcome to the official SimpleGemsAPI!
 
 Make sure you add SimpleGems to your depends or softdepends
 ```YAML
-depends:
+depend:
   - SimpleGems
 
 softdepend:

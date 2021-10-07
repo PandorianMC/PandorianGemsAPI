@@ -2,9 +2,10 @@
  * Copyright (c) Refrac
  * If you have any questions please join my discord https://discord.gg/jVnmm7QnQU
  */
-package me.refrac.simplegems.api.manager;
+package me.refrac.simplegems.plugin.api.manager;
 
-import me.refrac.simplegems.manager.Profile;
+import me.refrac.simplegems.plugin.manager.Profile;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
 import java.util.Map;
@@ -31,6 +32,36 @@ public class ProfileManager {
      */
     public Profile getProfile(Object object) {
         throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to get player gems
+     *
+     * @param player player
+     * @return Player's gems
+     */
+    public long getGems(Player player) {
+        throw new IllegalPluginAccessException("API is not registered");
+    }
+
+    /**
+     * Used to give Player gems
+     *
+     * @param player player
+     * @param amount gems
+     */
+    public void giveGems(Player player, long amount) {
+        throw new IllegalPluginAccessException("API is not registered");
+    }
+
+    /**
+     * Used to take player gems
+     *
+     * @param player data
+     * @param amount gems
+     */
+    public void takeGems(Player player, long amount) {
+        throw new IllegalPluginAccessException("API is not registered");
     }
 
     /**

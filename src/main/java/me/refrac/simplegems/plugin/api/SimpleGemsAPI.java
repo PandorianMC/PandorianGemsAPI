@@ -2,9 +2,9 @@
  * Copyright (c) Refrac
  * If you have any questions please join my discord https://discord.gg/jVnmm7QnQU
  */
-package me.refrac.simplegems.api;
+package me.refrac.simplegems.plugin.api;
 
-import me.refrac.simplegems.manager.ProfileManager;
+import me.refrac.simplegems.plugin.api.manager.*;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
 /**

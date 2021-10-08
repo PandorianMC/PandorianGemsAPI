@@ -15,6 +15,7 @@ You can either import the jar or use maven.
     <groupId>com.github.Refrac</groupId>
     <artifactId>SimpleGemsAPI</artifactId>
     <version>1.2-SNAPSHOT</version>
+    <scope>provided</scope>
 </dependency>
 ```
 Make sure you add SimpleGems to your depends or softdepends

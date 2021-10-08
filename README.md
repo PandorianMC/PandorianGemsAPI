@@ -28,32 +28,32 @@ softdepend:
 
 ```JAVA
 public long getGems(Player player) {
-    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     return profile.getGems(player);
 }
 
 public void giveGems(Player player, long amount) {
-    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.giveGems(player, amount);
 }
 
 public void takeGems(Player player, long amount) {
-    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.takeGems(player, amount);
 }
 
 public void setGems(Player player, long amount) {
-    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.setGems(player, amount);
 }
 
 public Boolean getSetting(Player player, String setting) {
-    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     return profile.getSetting(player, setting);
 }
 
 public void setSetting(Player player, String setting, boolean value) {
-    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.setSetting(player, setting, value);
 }
 ```

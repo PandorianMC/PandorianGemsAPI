@@ -5,6 +5,7 @@
 package me.refrac.simplegems.plugin.api.manager;
 
 import me.refrac.simplegems.plugin.manager.Profile;
+import me.refrac.simplegems.plugin.utilities.Logger;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
@@ -35,33 +36,74 @@ public class ProfileManager {
     }
 
     /**
-     * Used to get player gems
+     * Used to get player gems.
      *
      * @param player player
      * @return Player's gems
      */
     public long getGems(Player player) {
-        throw new IllegalPluginAccessException("API is not registered");
+        throw new IllegalPluginAccessException("API is not registered!");
     }
 
     /**
-     * Used to give Player gems
+     * Used to give Player gems.
      *
      * @param player player
      * @param amount gems
      */
     public void giveGems(Player player, long amount) {
-        throw new IllegalPluginAccessException("API is not registered");
+        throw new IllegalPluginAccessException("API is not registered!");
     }
 
     /**
-     * Used to take player gems
+     * Used to take player gems.
      *
      * @param player data
      * @param amount gems
      */
     public void takeGems(Player player, long amount) {
-        throw new IllegalPluginAccessException("API is not registered");
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to set player gems.
+     *
+     * @param player data
+     * @param amount gems
+     */
+    public void setGems(Player player, long amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to reset player's profile data.
+     *
+     * @param player player
+     */
+    public void resetPlayer(Player player) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to get a player's settings
+     *
+     * @param player player
+     * @param setting setting
+     * @return true if not null
+     */
+    public Boolean getSetting(Player player, String setting) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Allows you to disable messages from other addons.
+     *
+     * @param player player profile
+     * @param setting player setting
+     * @param value true or false value
+     */
+    public void setSetting(Player player, String setting, boolean value) {
+        throw new IllegalPluginAccessException("API is not registered!");
     }
 
     /**

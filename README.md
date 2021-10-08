@@ -3,7 +3,6 @@ Welcome to the official SimpleGemsAPI!
 
 # API Usage
 
-Make sure you add SimpleGems to your depends or softdepends
 ### Maven
 You can either import the jar or use maven.
 ```XAML
@@ -18,7 +17,7 @@ You can either import the jar or use maven.
     <version>1.2-SNAPSHOT</version>
 </dependency>
 ```
-
+Make sure you add SimpleGems to your depends or softdepends
 ```YAML
 depend:
   - SimpleGems

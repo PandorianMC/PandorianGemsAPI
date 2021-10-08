@@ -27,4 +27,19 @@ public void takeGems(Player player, long amount) {
     ProfileManager profile = SimpleGemsAPI.getProfileManager();
     profile.takeGems(player, amount);
 }
+
+public void setGems(Player player, long amount) {
+    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    profile.setGems(player, amount);
+}
+
+public Boolean getSetting(Player player, String setting) {
+    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    return profile.getSetting(player, setting);
+}
+
+public void setSetting(Player player, String setting, boolean value) {
+    ProfileManager profile = SimpleGemsAPI.getProfileManager();
+    profile.setSetting(player, setting, value);
+}
 ```

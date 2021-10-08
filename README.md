@@ -2,8 +2,18 @@
 Welcome to the official SimpleGemsAPI!
 
 # API Usage
+
+Make sure you add SimpleGems to your depends or softdepends
+```YAML
+depend:
+  - SimpleGems
+
+softdepend:
+  - SimpleGems
+```
+
 ```JAVA
-public int getGems(Player player, long amount) {
+public long getGems(Player player) {
     ProfileManager profile = SimpleGemsAPI.getProfileManager();
     return profile.getGems(player);
 }

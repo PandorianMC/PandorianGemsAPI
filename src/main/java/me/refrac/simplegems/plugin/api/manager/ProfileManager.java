@@ -5,7 +5,6 @@
 package me.refrac.simplegems.plugin.api.manager;
 
 import me.refrac.simplegems.plugin.manager.Profile;
-import me.refrac.simplegems.plugin.utilities.Logger;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
@@ -41,7 +40,7 @@ public class ProfileManager {
      * @param player player
      * @return Player's gems
      */
-    public long getGems(Player player) {
+    public int getGems(Player player) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -51,7 +50,7 @@ public class ProfileManager {
      * @param player player
      * @param amount gems
      */
-    public void giveGems(Player player, long amount) {
+    public void giveGems(Player player, int amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -61,7 +60,7 @@ public class ProfileManager {
      * @param player data
      * @param amount gems
      */
-    public void takeGems(Player player, long amount) {
+    public void takeGems(Player player, int amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -71,7 +70,7 @@ public class ProfileManager {
      * @param player data
      * @param amount gems
      */
-    public void setGems(Player player, long amount) {
+    public void setGems(Player player, int amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -85,24 +84,9 @@ public class ProfileManager {
     }
 
     /**
-     * Used to get a player's settings
-     *
-     * @param player player
-     * @param setting setting
-     * @return true if not null
+     * Used to reset all player data
      */
-    public Boolean getSetting(Player player, String setting) {
-        throw new IllegalPluginAccessException("API is not registered!");
-    }
-
-    /**
-     * Allows you to disable messages from other addons.
-     *
-     * @param player player profile
-     * @param setting player setting
-     * @param value true or false value
-     */
-    public void setSetting(Player player, String setting, boolean value) {
+    public void resetAllData() {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 

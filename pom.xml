@@ -77,7 +77,7 @@
             <artifactId>SimpleGems</artifactId>
             <version>1.8.8</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/SimpleGems-1.0.9.jar</systemPath>
+            <systemPath>${project.basedir}/lib/SimpleGems-1.0.10.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

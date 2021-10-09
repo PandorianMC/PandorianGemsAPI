@@ -14,7 +14,7 @@ You can either import the jar or use maven.
 <dependency>
     <groupId>com.github.Refrac</groupId>
     <artifactId>SimpleGemsAPI</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
     <scope>provided</scope>
 </dependency>
 ```
@@ -31,6 +31,11 @@ softdepend:
 public int getGems(Player player) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     return profile.getGems(player);
+}
+
+public boolean hasGems(Player player, int amount) {
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
+    return profile.hasGems(player);
 }
 
 public void giveGems(Player player, int amount) {

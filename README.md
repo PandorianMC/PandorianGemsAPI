@@ -47,14 +47,4 @@ public void setGems(Player player, long amount) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.setGems(player, amount);
 }
-
-public Boolean getSetting(Player player, String setting) {
-    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
-    return profile.getSetting(player, setting);
-}
-
-public void setSetting(Player player, String setting, boolean value) {
-    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
-    profile.setSetting(player, setting, value);
-}
 ```

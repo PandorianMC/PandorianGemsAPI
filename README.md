@@ -3,7 +3,6 @@ Welcome to the official SimpleGemsAPI!
 
 # API Usage
 
-### Maven
 Import the SimpleGemsAPI.jar into your project.
 Make sure you add SimpleGems to your depends or softdepends
 ```YAML

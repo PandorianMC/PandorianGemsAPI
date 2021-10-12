@@ -5,7 +5,6 @@
 package me.refrac.simplegems.plugin.api.manager;
 
 import me.refrac.simplegems.plugin.manager.Profile;
-import me.refrac.simplegems.plugin.utilities.Logger;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
@@ -52,7 +51,7 @@ public class ProfileManager {
      * @param amount gems
      * @return If the player has enough gems
      */
-    public boolean hasGems(Player player, int amount) {
+    public boolean hasGems(Player player, long amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -62,7 +61,7 @@ public class ProfileManager {
      * @param player player
      * @param amount gems
      */
-    public void giveGems(Player player, int amount) {
+    public void giveGems(Player player, long amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -72,7 +71,7 @@ public class ProfileManager {
      * @param player data
      * @param amount gems
      */
-    public void takeGems(Player player, int amount) {
+    public void takeGems(Player player, long amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -82,7 +81,7 @@ public class ProfileManager {
      * @param player data
      * @param amount gems
      */
-    public void setGems(Player player, int amount) {
+    public void setGems(Player player, long amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 

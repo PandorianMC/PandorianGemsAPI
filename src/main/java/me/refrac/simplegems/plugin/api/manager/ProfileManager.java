@@ -40,7 +40,7 @@ public class ProfileManager {
      * @param player player
      * @return Player's gems
      */
-    public int getGems(Player player) {
+    public double getGems(Player player) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -51,7 +51,7 @@ public class ProfileManager {
      * @param amount gems
      * @return If the player has enough gems
      */
-    public boolean hasGems(Player player, long amount) {
+    public boolean hasGems(Player player, double amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -61,7 +61,7 @@ public class ProfileManager {
      * @param player player
      * @param amount gems
      */
-    public void giveGems(Player player, long amount) {
+    public void giveGems(Player player, double amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -71,7 +71,7 @@ public class ProfileManager {
      * @param player data
      * @param amount gems
      */
-    public void takeGems(Player player, long amount) {
+    public void takeGems(Player player, double amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -81,7 +81,7 @@ public class ProfileManager {
      * @param player data
      * @param amount gems
      */
-    public void setGems(Player player, long amount) {
+    public void setGems(Player player, double amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 

@@ -1,6 +1,8 @@
 # SimpleGemsAPI
 Welcome to the official SimpleGemsAPI!
 
+### NOTE: The SimpleGemsAPI only works for the premium version.
+
 # API Usage
 
 Import the SimpleGemsAPI.jar into your project.

@@ -16,27 +16,27 @@ softdepend:
 ```
 
 ```JAVA
-public int getGems(Player player) {
+public double getGems(Player player) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     return profile.getGems(player);
 }
 
-public boolean hasGems(Player player, int amount) {
+public boolean hasGems(Player player, double amount) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     return profile.hasGems(player);
 }
 
-public void giveGems(Player player, int amount) {
+public void giveGems(Player player, double amount) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.giveGems(player, amount);
 }
 
-public void takeGems(Player player, int amount) {
+public void takeGems(Player player, double amount) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.takeGems(player, amount);
 }
 
-public void setGems(Player player, int amount) {
+public void setGems(Player player, double amount) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.setGems(player, amount);
 }

@@ -26,6 +26,16 @@ public boolean hasGems(Player player, double amount) {
     return profile.hasGems(player);
 }
 
+public void payGems(Player player, Player target, double amount) {
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
+    profile.payGems(player, target, amount);
+}
+
+public void withdrawGems(Player player, int amount) {
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
+    profile.withdrawGems(player, amount);
+}
+
 public void giveGems(Player player, double amount) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.giveGems(player, amount);

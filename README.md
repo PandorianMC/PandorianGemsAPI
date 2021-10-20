@@ -1,7 +1,7 @@
 # SimpleGemsAPI
 Welcome to the official SimpleGemsAPI!
 
-### NOTE: The SimpleGemsAPI only works for the premium version.
+### NOTE: The SimpleGemsAPI only works for the premium version [here](https://polymart.org/resource/simplegems-1-8-1-16.1611).
 
 # API Usage
 

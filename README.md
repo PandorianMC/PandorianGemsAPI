@@ -36,6 +36,16 @@ public void withdrawGems(Player player, int amount) {
     profile.withdrawGems(player, amount);
 }
 
+public void giveGemsItem(Player player, int amount) {
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
+    profile.giveGemsItem(player, amount);
+}
+
+public void getGemsItem() {
+    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
+    profile.getGemsItem();
+}
+
 public void giveGems(Player player, double amount) {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.giveGems(player, amount);

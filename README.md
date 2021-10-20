@@ -41,7 +41,7 @@ public void giveGemsItem(Player player, int amount) {
     profile.giveGemsItem(player, amount);
 }
 
-public void getGemsItem() {
+public ItemStack getGemsItem() {
     ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
     profile.getGemsItem();
 }

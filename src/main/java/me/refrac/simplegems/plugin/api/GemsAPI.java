@@ -2,34 +2,24 @@
  * Copyright (c) Refrac
  * If you have any questions please join my discord https://discord.gg/jVnmm7QnQU
  */
-package me.refrac.simplegems.plugin.api.manager;
+package me.refrac.simplegems.plugin.api;
 
-import me.refrac.simplegems.plugin.SimpleGems;
 import me.refrac.simplegems.plugin.manager.Profile;
-import me.refrac.simplegems.plugin.utilities.Files;
-import me.refrac.simplegems.plugin.utilities.ItemBuilder;
-import me.refrac.simplegems.plugin.utilities.chat.Color;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-
-public class ProfileManager {
+/**
+ * The SimpleGemsAPI allows you to hook into SimpleGems to either modify and grab data
+ * or to add new features and events. Questions? https://discord.gg/jVnmm7QnQU
+ */
+public class GemsAPI {
+    public static GemsAPI INSTANCE;
 
     /**
-     * Used to create a player's profile.
-     * This is done on the first join of the player.
-     *
-     * @param uuid Player's UUID
-     * @param name Player's name
+     * @return Is the SimpleGemsAPI enabled and registered?
      */
-    public void handleProfileCreation(UUID uuid, String name) {
+    public static boolean isRegistered() {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -58,8 +48,9 @@ public class ProfileManager {
      * @param player player profile
      * @param target target profile
      * @param amount paid gems
+     * @param silent silent gems
      */
-    public void payGems(Player player, Player target, double amount) {
+    public void payGems(Player player, Player target, double amount, boolean silent) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -145,31 +136,6 @@ public class ProfileManager {
      * @param player player
      */
     public void resetPlayer(Player player) {
-        throw new IllegalPluginAccessException("API is not registered!");
-    }
-
-    /**
-     * Used to reset all player data
-     */
-    public void resetAllData() {
-        throw new IllegalPluginAccessException("API is not registered!");
-    }
-
-    /**
-     * Used to get the list of profiles.
-     *
-     * @return List of profiles
-     */
-    public Map<UUID, Profile> getProfiles() {
-        throw new IllegalPluginAccessException("API is not registered!");
-    }
-
-    /**
-     * Used to set the list of profiles.
-     *
-     * @param profiles List of profiles
-     */
-    public void setProfiles(Map<UUID, Profile> profiles) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 }

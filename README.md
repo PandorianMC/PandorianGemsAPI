@@ -41,22 +41,6 @@ public ItemStack getGemsItem() {
     return GemsAPI.INSTANCE.getGemsItem();
 }
 
-public void payGems(Player player, Player target, double amount, silent) {
-     GemsAPI.INSTANCE.payGems(player, target, amount, silent);
-}
-
-public void withdrawGems(Player player, int amount) {
-     GemsAPI.INSTANCE.withdrawGems(player, amount);
-}
-
-public void giveGemsItem(Player player, int amount) {
-     GemsAPI.INSTANCE.giveGemsItem(player, amount);
-}
-
-public ItemStack getGemsItem() {
-    return  GemsAPI.INSTANCE.getGemsItem();
-}
-
 public void giveGems(Player player, double amount) {
     GemsAPI.INSTANCE.giveGems(player, amount);
 }

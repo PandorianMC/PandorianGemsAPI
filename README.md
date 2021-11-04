@@ -22,7 +22,7 @@ public double getGems(Player player) {
 }
 
 public boolean hasGems(Player player, double amount) {
-    return GemsAPI.INSTANCE.hasGems(player);
+    return GemsAPI.INSTANCE.hasGems(player, amount);
 }
 
 public void payGems(Player player, Player target, double amount, boolean silent) {
@@ -41,24 +41,20 @@ public ItemStack getGemsItem() {
     return GemsAPI.INSTANCE.getGemsItem();
 }
 
-public void payGems(Player player, Player target, double amount) {
-    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
-    profile.payGems(player, target, amount);
+public void payGems(Player player, Player target, double amount, silent) {
+     GemsAPI.INSTANCE.payGems(player, target, amount, silent);
 }
 
 public void withdrawGems(Player player, int amount) {
-    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
-    profile.withdrawGems(player, amount);
+     GemsAPI.INSTANCE.withdrawGems(player, amount);
 }
 
 public void giveGemsItem(Player player, int amount) {
-    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
-    profile.giveGemsItem(player, amount);
+     GemsAPI.INSTANCE.giveGemsItem(player, amount);
 }
 
 public ItemStack getGemsItem() {
-    ProfileManager profile = SimpleGemsAPI.INSTANCE.getProfileManager();
-    return profile.getGemsItem();
+    return  GemsAPI.INSTANCE.getGemsItem();
 }
 
 public void giveGems(Player player, double amount) {

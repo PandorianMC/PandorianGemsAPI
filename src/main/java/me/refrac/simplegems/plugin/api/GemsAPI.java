@@ -4,7 +4,8 @@
  */
 package me.refrac.simplegems.plugin.api;
 
-import me.refrac.simplegems.plugin.manager.Profile;
+import me.refrac.simplegems.plugin.manager.ProfileData;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.IllegalPluginAccessException;
@@ -24,12 +25,11 @@ public class GemsAPI {
     }
 
     /**
-     * Used to get a player's profile.
+     * Used to get a player's profile data.
      *
-     * @param object Player's UUID or Name
      * @return Player's profile
      */
-    public Profile getProfile(Object object) {
+    public ProfileData getProfileData() {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -44,13 +44,35 @@ public class GemsAPI {
     }
 
     /**
+     * Used to get offline player gems.
+     *
+     * @param player player
+     * @return Player's gems
+     */
+    public double getOfflineGems(OfflinePlayer player) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
      * This will pay gems to the specified player
+     *
      * @param player player profile
      * @param target target profile
      * @param amount paid gems
      * @param silent silent gems
      */
     public void payGems(Player player, Player target, double amount, boolean silent) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * This will pay gems to the specified player
+     *
+     * @param player player profile
+     * @param target target profile
+     * @param amount paid gems
+     */
+    public void payOfflineGems(Player player, OfflinePlayer target, double amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -90,7 +112,7 @@ public class GemsAPI {
     }
 
     /**
-     * Used tp check if the player has enough gems
+     * Used to check if the player has enough gems
      *
      * @param player player
      * @param amount gems
@@ -101,12 +123,33 @@ public class GemsAPI {
     }
 
     /**
-     * Used to give Player gems.
+     * Used to check if the offline player has enough gems
+     *
+     * @param player player
+     * @param amount gems
+     * @return If the player has enough gems
+     */
+    public boolean hasOfflineGems(OfflinePlayer player, double amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to give player gems.
      *
      * @param player player
      * @param amount gems
      */
     public void giveGems(Player player, double amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to give offline player gems.
+     *
+     * @param player player
+     * @param amount gems
+     */
+    public void giveOfflineGems(OfflinePlayer player, double amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -121,6 +164,16 @@ public class GemsAPI {
     }
 
     /**
+     * Used to take offline player gems.
+     *
+     * @param player data
+     * @param amount gems
+     */
+    public void takeOfflineGems(OfflinePlayer player, double amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
      * Used to set player gems.
      *
      * @param player data
@@ -131,11 +184,30 @@ public class GemsAPI {
     }
 
     /**
+     * Used to set offline player gems.
+     *
+     * @param player data
+     * @param amount gems
+     */
+    public void setOfflineGems(OfflinePlayer player, double amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
      * Used to reset player's profile data.
      *
      * @param player player
      */
     public void resetPlayer(Player player) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to reset offline player's profile data.
+     *
+     * @param player player
+     */
+    public void resetOfflinePlayer(OfflinePlayer player) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 }

@@ -1,5 +1,5 @@
 # SimpleGemsAPI
-Welcome to the official SimpleGemsAPI!
+Welcome to the official PandorianGemsAPI!
 
 # API Usage
 Import the PandorianGemsAPI.jar into your project.

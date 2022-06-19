@@ -1,19 +1,15 @@
 # SimpleGemsAPI
 Welcome to the official SimpleGemsAPI!
 
-### NOTE: The SimpleGemsAPI only works for the premium version.
-[Polymart](https://polymart.org/resource/simplegems-1-8-1-16.1611)
-[Songoda](https://songoda.com/marketplace/product/simplegems-18-116-add-gems-to-minecraft-a-new-type-of-currency-to-servers.754)
-
 # API Usage
-Import the SimpleGemsAPI.jar into your project.
-Make sure you add SimpleGems to your depends or softdepends
+Import the PandorianGemsAPI.jar into your project.
+Make sure you add PandorianGems to your depends or softdepends
 ```YAML
 depend:
-  - SimpleGems
+  - PandorianGems
 
 softdepend:
-  - SimpleGems
+  - PandorianGems
 ```
 
 ```JAVA

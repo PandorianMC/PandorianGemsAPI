@@ -1,4 +1,4 @@
-# SimpleGemsAPI
+# PandorianGemsAPI
 Welcome to the official PandorianGemsAPI!
 
 # API Usage

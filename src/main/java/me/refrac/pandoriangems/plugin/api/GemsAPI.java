@@ -29,7 +29,7 @@ public class GemsAPI {
      *
      * @return Player's profile
      */
-    public ProfileData getProfileData() {
+    public ProfileData getProfileData(Player player) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 

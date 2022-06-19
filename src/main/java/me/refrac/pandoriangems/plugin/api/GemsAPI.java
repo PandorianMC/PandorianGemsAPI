@@ -1,7 +1,3 @@
-/*
- * Copyright (c) Refrac
- * If you have any questions please join my discord https://discord.gg/jVnmm7QnQU
- */
 package me.refrac.pandoriangems.plugin.api;
 
 import me.refrac.pandoriangems.plugin.manager.ProfileData;
